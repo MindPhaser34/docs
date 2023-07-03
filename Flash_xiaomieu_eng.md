@@ -1,6 +1,6 @@
 # Flash xiaomi.eu ROM (macOS)
 
-In this article, I am going to tell you how I flashed xiaomi.eu ROM with MIUI 14 to my new device - Xiaomi Mi 13 Ultra. But I think this guide is suitable for owners of other models with Snapdragon Gen 1/2. 
+In this article, I will show you how I flashed xiaomi.eu ROM with MIUI 14 to my new device - Xiaomi Mi 13 Ultra. But I think this guide is suitable for owners of other models with Snapdragon Gen 1/2. 
 
 ## 1. Unlock bootloader
 
@@ -13,7 +13,7 @@ Finally, if you cant find any solution, just run Virtual machine with Windows (v
 
 Wait for unlock.
 
-#### So, before go ahead, you should do one IMPORTANT thing -  start to play this song in background! :)
+#### So, before go ahead, you should do one IMPORTANT thing -  Put this song in the background! :)
 https://www.youtube.com/watch?v=jC2ZY2loo74
 
 
@@ -23,13 +23,13 @@ Download latest ROM version: https://sourceforge.net/projects/xiaomi-eu-multilan
 
 Download platform tools and unpack: https://dl.google.com/android/repository/platform-tools-latest-darwin.zip
 
-Download latest TWRP version for device (ishtar), unpack, rename img-file to recovery.img and move to folder with platform tools: https://unofficialtwrp.com/category/xiaomi
+Download latest TWRP version for device (ishtar), unpack, rename img-file to **recovery.img** and move to folder with platform tools: https://unofficialtwrp.com/category/xiaomi
 
 Enable USB debugging: 
 - Settings > My Device > Detailed info & spec. Then click on 'MIUI version' 7 times to enable Developer Options.
 - Go to Setting > Additional Settings > Developer options. Switch on "Developer options" and "USB debugging".
 
-## 3. Flash TWRP
+## 3. Flash recovery (TWRP)
 
 It's very easy. Boot your device in fastboot mode:
 - Turn off the Mi phone completely.
@@ -59,3 +59,15 @@ Then your device will boot to the new recovery.
 - Flash ROM: Install > Select ROM file > Install Image > Reboot (select current partition)
 
 Profit!
+
+## PS.
+If you have any reason to restore stock recovery, you could do this:
+- Download latest official ROM from here https://xiaomifirmwareupdater.com/miui/
+- Unpack it and copy **recovery.img** to platform-tools folder with fastboot
+- Flash it as TWRP:
+```
+./fastboot flash recovery_ab recovery.img
+./fastboot reboot recovery
+```
+
+Done.
