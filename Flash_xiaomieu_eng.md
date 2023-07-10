@@ -23,7 +23,7 @@ Download latest ROM version: https://sourceforge.net/projects/xiaomi-eu-multilan
 
 Download platform tools and unpack: https://dl.google.com/android/repository/platform-tools-latest-darwin.zip
 
-Download latest TWRP version for device (ishtar), unpack, rename img-file to **recovery.img** and move to folder with platform tools: https://unofficialtwrp.com/category/xiaomi
+Download latest TWRP version for device (ishtar), unpack, rename img-file to **recovery.img** and move to folder with platform tools: https://sourceforge.net/projects/recovery-for-xiaomi-devices/files/ishtar/
 
 Enable USB debugging: 
 - Settings > My Device > Detailed info & spec. Then click on 'MIUI version' 7 times to enable Developer Options.
