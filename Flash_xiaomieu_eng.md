@@ -1,6 +1,6 @@
 # Flash xiaomi.eu ROM (macOS)
 
-In this article, I will show you how I flashed xiaomi.eu ROM with MIUI 14 to my new device - Xiaomi Mi 13 Ultra. But I think this guide is suitable for owners of other models with Snapdragon Gen 1/2. 
+In this article, I will show you how I flashed xiaomi.eu ROM with MIUI 14(or HyperOS) to my new device - Xiaomi Mi 13 Ultra. But I think this guide is suitable for owners of other models with Snapdragon Gen 1/2. 
 
 ## 1. Unlock bootloader
 
@@ -19,7 +19,7 @@ https://www.youtube.com/watch?v=jC2ZY2loo74
 
 ## 2. Prepare environment
 
-Download latest ROM version: https://sourceforge.net/projects/xiaomi-eu-multilang-miui-roms/files/xiaomi.eu/MIUI-STABLE-RELEASES/MIUIv14/
+Download latest ROM version: https://sourceforge.net/projects/xiaomi-eu-multilang-miui-roms/files/xiaomi.eu/
 
 Download platform tools and unpack: https://dl.google.com/android/repository/platform-tools-latest-darwin.zip
 
@@ -52,13 +52,35 @@ Then your device will boot to the new recovery.
 
 ## 4. Flash xiaomi.eu ROM
 
-- CHeck this link if you need to change language: https://rootunroot.com/wp-content/uploads/2018/06/change-twrp-language-to-english.gif
+- Check this link if you need to change language: https://rootunroot.com/wp-content/uploads/2018/06/change-twrp-language-to-english.gif
 - Clear data: Wipe > Format Data
 - Mount device to OS: Mount > USB-storage
 - Copy ROM: On macOS copy your zip-file with ROM to the internal storage of device via any tools like this https://www.android.com/filetransfer/
 - Flash ROM: Install > Select ROM file > Install Image > Reboot (select current partition)
 
 Profit!
+
+## (Bonus) Flash ROMs via Fastboot
+You could flash any other ROMs (may be official) without flash TWRP recovery. 
+- Download ROM for fastboot version and extract (Latest HyperOS Official ROMs: https://xiaomifirmwareupdater.com/hyperos/ishtar/) 
+- Extract it to folder with fastboot
+- Boot your device in fastboot mode as in step 3.
+
+The you have next options:
+
+Flash the ROM and erase all user data:
+```
+./flash_all.sh
+```
+Flash the ROM and preserve/save all user data:
+```
+./flash_all_except_storage.sh
+```
+Flash the ROM, erase all user data, and lock the bootloader:
+```
+./flash_all_lock.sh
+```
+Done.
 
 ## PS.
 If you have any reason to restore stock recovery, you could do this:
