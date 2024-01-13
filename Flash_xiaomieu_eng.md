@@ -52,7 +52,7 @@ Then your device will boot to the new recovery.
 
 ## 4. Flash xiaomi.eu ROM
 
-- Check this link if you need to change language: https://rootunroot.com/wp-content/uploads/2018/06/change-twrp-language-to-english.gif
+- Check this link if you need to change language: https://xiaomi.eu/community/attachments/bez-n%C3%A1zvu-1-png.42793/
 - Clear data: Wipe > Format Data
 - Mount device to OS: Mount > USB-storage
 - Copy ROM: On macOS copy your zip-file with ROM to the internal storage of device via any tools like this https://www.android.com/filetransfer/
