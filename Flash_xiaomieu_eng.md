@@ -84,7 +84,7 @@ Done.
 
 ## PS.
 If you have any reason to restore stock recovery, you could do this:
-- Download latest official ROM from here https://xiaomifirmwareupdater.com/miui/
+- Download latest official ROM from here [https://xiaomifirmwareupdater.com/miui/](https://xmfirmwareupdater.com/hyperos)
 - Unpack it and copy **recovery.img** to platform-tools folder with fastboot
 - Flash it as TWRP:
 ```
