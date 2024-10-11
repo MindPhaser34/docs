@@ -82,6 +82,14 @@ Flash the ROM, erase all user data, and lock the bootloader:
 ```
 Done.
 
+**UPD**:
+In new version of ROM you could choose only:
+```
+*_fastboot_first_install_with_data_format.sh
+*_fastboot_update_rom.sh
+```
+when "*" is your OS
+
 ## PS.
 If you have any reason to restore stock recovery, you could do this:
 - Download latest official ROM from here [https://xiaomifirmwareupdater.com/miui/](https://xmfirmwareupdater.com/hyperos)
