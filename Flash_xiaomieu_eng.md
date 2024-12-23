@@ -72,23 +72,32 @@ Flash the ROM and erase all user data:
 ```
 ./flash_all.sh
 ```
+or (in new versions, "*" is your OS)
+```
+*_fastboot_first_install_with_data_format.sh
+or
+*_install_and_format_data.sh
+```
+
+
 Flash the ROM and preserve/save all user data:
 ```
 ./flash_all_except_storage.sh
 ```
+or (in new versions, "*" is your OS)
+```
+*_install_upgrade.sh
+or
+*_fastboot_update_rom.sh
+```
+
+
 Flash the ROM, erase all user data, and lock the bootloader:
 ```
 ./flash_all_lock.sh
 ```
 Done.
 
-**UPD**:
-In new version of ROM you could choose only:
-```
-*_fastboot_first_install_with_data_format.sh
-*_fastboot_update_rom.sh
-```
-when "*" is your OS
 
 ## PS.
 If you have any reason to restore stock recovery, you could do this:
