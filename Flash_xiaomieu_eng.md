@@ -72,7 +72,7 @@ Flash the ROM and erase all user data:
 ```
 ./flash_all.sh
 ```
-or (in new versions, "*" is your OS)
+for new versions (replace "*" is your OS):
 ```
 *_fastboot_first_install_with_data_format.sh
 or
@@ -84,7 +84,7 @@ Flash the ROM and preserve/save all user data:
 ```
 ./flash_all_except_storage.sh
 ```
-or (in new versions, "*" is your OS)
+for new versions:
 ```
 *_install_upgrade.sh
 or
